@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <scrip src="{{ asset('js/app.js') }}"></scrip>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/METR-main.css') }}">
     <title>METR</title>
 </head>
 <body>
