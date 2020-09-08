@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+.main {
+    background: url($R_img + "backgrounds/main.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px $ident_desc 0 $ident_desc ;
+
+}
+.header_navbar{
+    display: flex;
+    align-items: center;
+}
+.header_navbar-link{
+    margin: 0 0 0 50px;
+}
+.header_logo {
+    box-sizing: border-box;
+    $size: 100px;
+    $border: 3px;
+    $padding: $size/5;
+    width: $size;
+    height: $size;
+    padding: $padding - $border;
+    border: $border solid black;
+
+    img {
+        display: block;
+        width: $size - 2 * ($padding);
+        height: $size  - 2 * ($padding);
+    }
+}
+.main_text{
+    margin: 160px 0 0 $ident_desc;
+    width: 400px;
+}
+.main_order{
+    margin:80px 0 0 $ident_desc;
+}
+.main_social{
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+    display: flex;
+    flex-direction: row;
+}
+.main_social-icon{
+    margin: 0 0 0 50px;
+}

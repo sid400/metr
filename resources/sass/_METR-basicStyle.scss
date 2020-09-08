@@ -1,1 +1,196 @@
+//Fonts
+%Montserrat-R {
+    font-family: 'Montserrat-R';
+    font-weight: normal;
+}
 
+.M_H1 {
+    @extend %Montserrat-R;
+    font-size: 36px;
+}
+
+.M_H2 {
+    @extend %Montserrat-R;
+    font-size: 24px;
+}
+
+.M_text {
+    @extend %Montserrat-R;
+    font-size: 18px;
+}
+
+.M_text-Btn {
+    @extend %Montserrat-R;
+    font-size: 18px;
+}
+
+//Navigate and buttons
+%BFG {
+    content: '';
+    position: absolute;
+    background-color: $C_black;
+    transition: all 0.5s ease;
+}
+
+%Btn-a-fix {
+    text-decoration: none;
+    text-underline: none;
+    color: $C_black;
+
+    &:hover {
+        text-decoration: none;
+        text-underline: none;
+        color: $C_black;
+    }
+
+    &:focus {
+        text-decoration: none;
+        text-underline: none;
+        color: $C_black;
+    }
+
+    &:visited {
+        text-decoration: none;
+        text-underline: none;
+        color: $C_black;
+    }
+}
+
+.M_btn-main {
+    @extend .M_text-Btn;
+    @extend %Btn-a-fix;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+
+    &:before {
+        @extend %BFG;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+    }
+
+    &:after {
+        @extend %BFG;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        height: 0;
+    }
+
+    span {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &:before {
+            @extend %BFG;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 1px;
+        }
+
+        &:after {
+            @extend %BFG;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 0;
+        }
+    }
+
+    &:hover {
+        &:before {
+            width: 50%;
+        }
+
+        &:after {
+            height: 50%;
+        }
+
+        span {
+            &:before {
+                width: 50%;
+            }
+
+            &:after {
+                height: 50%;
+            }
+        }
+    }
+
+    &:focus {
+        &:before {
+            width: 100%;
+        }
+
+        &:after {
+            height: 100%;
+        }
+
+        span {
+            &:before {
+                width: 100%;
+            }
+
+            &:after {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.M_btn-order {
+    @extend .M_text-Btn;
+    @extend %Btn-a-fix;
+    display: inline-block;
+    border: 1px solid $C_black;
+    padding: 13px 30px;
+
+    &:hover {
+        background-color: $C_gray-1;
+    }
+
+    &:focus {
+        background-color: $C_gray-2;
+
+    }
+}
+
+.M_btn-icon {
+    @extend .M_btn-order;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.M_btn-icon-instagramm {
+    background-image: url($R_img +  "icon/instagramm.png");
+}
+
+.M_btn-icon-vkontakte {
+    background-image: url($R_img +  "icon/vkontakte.png");
+}
+
+.M_btn-select {
+    @extend .M_text-Btn;
+    @extend %Btn-a-fix;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 1px;
+    }
+}
