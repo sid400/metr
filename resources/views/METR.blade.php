@@ -12,27 +12,119 @@
 </head>
 <body>
 <div id="METR">
-    <section class="main">
-        <div class="header">
-            <div class="header_logo">
-                <img src="{{ asset('img/logo/metr.svg') }}" alt="">
+    <div class="wrapper-gray">
+        <section class="main">
+            <div class="header">
+                <div class="header_logo">
+                    <img src="{{ asset('img/logo/metr.svg') }}" alt="">
+                </div>
+                <div class="header_burger"></div>
+                <div class="header_navbar">
+                    <a href="#" class="M_btn-main header_navbar-link"><span>о компании</span></a>
+                    <a href="#" class="M_btn-main header_navbar-link"><span>портфолио</span></a>
+                    <a href="#" class="M_btn-main header_navbar-link"><span>цены</span></a>
+                    <a href="#" class="M_btn-main header_navbar-link"><span>отзывы</span></a>
+                    <a href="#" class="M_btn-main header_navbar-link"><span>контакты</span></a>
+                </div>
             </div>
-            <div class="header_burger"></div>
-            <div class="header_navbar">
-                <a href="#" class="M_btn-main header_navbar-link"><span>о компании</span></a>
-                <a href="#" class="M_btn-main header_navbar-link"><span>портфолио</span></a>
-                <a href="#" class="M_btn-main header_navbar-link"><span>цены</span></a>
-                <a href="#" class="M_btn-main header_navbar-link"><span>отзывы</span></a>
-                <a href="#" class="M_btn-main header_navbar-link"><span>контакты</span></a>
+            <div class="M_H1 main_text">Студия дизайна лучших интерьеров</div>
+            <a href="#" class="M_btn-order main_order">Заказать проект</a>
+            <div class="main_social">
+                <div class="M_btn-icon M_btn-icon-instagramm main_social-icon"></div>
+                <div class="M_btn-icon M_btn-icon-vkontakte main_social-icon"></div>
             </div>
+        </section>
+    </div>
+    <section class="about">
+        <div class="about_elem about_elem-1">
+            <img class="about_img about_img-1" src="{{asset('public/img/about/2_1.jpg')}}" alt="">
         </div>
-        <div class="M_H1 main_text">Студия дизайна лучших интерьеров</div>
-        <a href="#" class="M_btn-order main_order">Заказать проект</a>
-        <div class="main_social">
-            <div class="M_btn-icon M_btn-icon-instagramm main_social-icon"></div>
-            <div class="M_btn-icon M_btn-icon-vkontakte main_social-icon"></div>
+        <div class="about_elem about_elem-2">
+            <img class="about_img about_img-2" src="{{asset('public/img/about/2_2.jpg')}}" alt="">
+        </div>
+        <div class="about_elem about_elem-3">
+            <img class="about_img about_img-3" src="{{asset('public/img/about/2_3.jpg')}}" alt="">
+        </div>
+        <div class="about_elem about_elem-4">
+            <p class="about_header M_H1">О компании</p>
+        </div>
+        <div class="about_elem about_elem-5">
+            <p class="about_text  about_text-1 M_H2">Наша компания была создана в 2016 году в Белгороде, затем мы
+                открыли офис в Москве и в Санкт-Петербурге.
+                Сейчас открываемся в Екатеринбурге. </p>
+        </div>
+        <div class="about_elem about_elem-6">
+            <p class="about_text M_H2">Если в вашем городе нет нашего офиса, мы готовы вам помочь онлайн!</p>
+        </div>
+        <div class="about_elem about_elem-7">
+            <p class="about_text M_H2">В нашей команде работают только профессиональные дизайнеры с многолетним опытом,
+                так что вы можете
+                быть уверены в качестве нашей работы.</p>
+        </div>
+        <div class="about_elem about_elem-9">
+            <img class="about_img about_img-4" src="{{asset('public/img/about/2_4.jpg')}}" alt="">
         </div>
     </section>
+    <div class="wrapper-gray">
+        <section class="order">
+            <div class="order_block">
+
+                <div class="order_frame">
+                    <p class="order_text M_H1">Закажите <br> дизайн-проект вашего интерьера
+                        у&nbsp;нас и&nbsp;живите
+                        в&nbsp;доме своей мечты</p>
+                    <a href="#" class="M_btn-order order_btn">Заказать проект</a>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="portfolio">
+        <h1 class="M_H1 portfolio_header">Портфолио</h1>
+        <div class="portfolio_navbar">
+            <a href="" class="M_btn-select">Все проекты</a>
+            <a href="" class="M_btn-select">Спальня</a>
+            <a href="" class="M_btn-select">Кухня</a>
+            <a href="" class="M_btn-select">Гостиная</a>
+            <a href="" class="M_btn-select">Кабинет</a>
+        </div>
+        <div class="portfolio_showcase"></div>
+
+    </section>
+    <div class="wrapper-gray">
+        <section class="prices">
+            <h1 class="prices_header">Цены</h1>
+            <div class="prices_wrapper">
+                <div class="prices_cart">
+                    <h2 class="M_H1 prices_cart-header">Лайт</h2>
+                    <p class="M_H2 prices_cart-condition">500 ₽ / м2</p>
+                    <p class="M_text prices_cart-text">3D дизайн проект</p>
+                    <p class="M_text prices_cart-text">Рекомендации
+                        по декорированию помещений</p>
+                    <a href="" class="M_btn-order prices_cart-order">Заказать проект</a>
+                </div>
+                <div class="prices_cart">
+                    <h2 class="M_H1 prices_cart-header">Стандарт</h2>
+                    <p class="M_H2 prices_cart-condition">1500 ₽ / м2</p>
+                    <p class="M_text prices_cart-text">3D дизайн проект</p>
+                    <p class="M_text prices_cart-text">Рекомендации
+                        по декорированию помещений</p>
+                    <p class="M_text prices_cart-text">Личная консультация дизайнера</p>
+                    <a href="" class="M_btn-order prices_cart-order">Заказать проект</a>
+                </div>
+                <div class="prices_cart">
+                    <h2 class="M_H1 prices_cart-header">Люкс</h2>
+                    <p class="M_H2 prices_cart-condition">3000 ₽ / м2</p>
+                    <p class="M_text prices_cart-text">3D дизайн проект</p>
+                    <p class="M_text prices_cart-text">Рекомендации
+                        по декорированию помещений</p>
+                    <p class="M_text prices_cart-text">Личная консультация дизайнера</p>
+                    <p class="M_text prices_cart-text">Скетч дизайна ещё одного помещения</p>
+                    <a href="" class="M_btn-order prices_cart-order">Заказать проект</a>
+                </div>
+            </div>
+        </section>
+    </div>
 </div>
 </body>
 </html>

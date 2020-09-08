@@ -7,21 +7,25 @@
 .M_H1 {
     @extend %Montserrat-R;
     font-size: 36px;
+    line-height: 44px;
 }
 
 .M_H2 {
     @extend %Montserrat-R;
     font-size: 24px;
+    line-height: 29px;
 }
 
 .M_text {
     @extend %Montserrat-R;
     font-size: 18px;
+    line-height: 22px;
 }
 
 .M_text-Btn {
     @extend %Montserrat-R;
     font-size: 18px;
+    line-height: 22px;
 }
 
 //Navigate and buttons
@@ -151,6 +155,9 @@
     display: inline-block;
     border: 1px solid $C_black;
     padding: 13px 30px;
+    display: block;
+    width: 220px;
+    height: 48px;
 
     &:hover {
         background-color: $C_gray-1;
