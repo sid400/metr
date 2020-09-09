@@ -82,11 +82,11 @@
     <section class="portfolio">
         <h1 class="M_H1 portfolio_header">Портфолио</h1>
         <div class="portfolio_navbar">
-            <a href="" class="M_btn-select">Все проекты</a>
-            <a href="" class="M_btn-select">Спальня</a>
-            <a href="" class="M_btn-select">Кухня</a>
-            <a href="" class="M_btn-select">Гостиная</a>
-            <a href="" class="M_btn-select">Кабинет</a>
+            <a href="" class="portfolio_navbar-link M_btn-select M_btn-selectActive">Все проекты</a>
+            <a href="" class="portfolio_navbar-link M_btn-select">Спальня</a>
+            <a href="" class="portfolio_navbar-link M_btn-select">Кухня</a>
+            <a href="" class="portfolio_navbar-link M_btn-select">Гостиная</a>
+            <a href="" class="portfolio_navbar-link M_btn-select">Кабинет</a>
         </div>
         <div class="portfolio_showcase"></div>
 
@@ -124,6 +124,42 @@
                 </div>
             </div>
         </section>
+    </div>
+    <section class="reviews"></section>
+    <div class="wrapper-gray">
+        <section class="contacts">
+            <h1 class="contacts_header">Контакты</h1>
+            <div class="contacts_wrapper">
+                <h2 class="M_H1 contacts_S_header contacts_S_header-1">Оставьте заявку
+                    на&nbsp;разработку проекта</h2>
+                <div class="contacts_wrapper_form">
+                    <input type="text" class="contacts_input M_input M_text" placeholder="Имя">
+                    <input type="text" class="contacts_input M_input M_text" placeholder="Телефон">
+                    <textarea class="contacts_textarea M_textarea M_text" name="" id="" cols="30" rows="7"></textarea>
+                    <a href="" class="M_btn-order contacts_btn">Заказать проект</a>
+                    <p class="contacts_conditions M_text">Нажимая на кнопку, я даю согласие на обработку персональных
+                        данных</p>
+                </div>
+                <h2 class="M_H1 contacts_S_header contacts_S_header-2">Или свяжитесь с нами самостоятельно</h2>
+            </div>
+
+        </section>
+        <footer>
+            <h1 class="M_H1 footer_header">Всегда на связи</h1>
+            <div class="footer_wrapper">
+                <div class="footer_block">
+                    <span class="M_H2">+7-777-77-77</span>
+                </div>
+                <div class="footer_block footer_block_social">
+                    <a href="#" class="M_btn-icon M_btn-icon-instagramm main_social-icon footer_social"></a>
+                    <a href="#" class="M_btn-icon M_btn-icon-vkontakte main_social-icon footer_social"></a>
+
+                </div>
+                <div class="footer_block">
+                    <span class="M_H2">metr@gmeil.com</span>
+                </div>
+            </div>
+        </footer>
     </div>
 </div>
 </body>

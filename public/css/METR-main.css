@@ -151,13 +151,20 @@
 .M_btn-select {
   position: relative;
 }
-.M_btn-select:before {
+
+.M_btn-selectActive:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 50%;
   height: 1px;
+  background-color: #141414;
+}
+
+.M_input {
+  padding: 10px;
+  border: 1px solid #141414;
 }
 
 body {
@@ -321,7 +328,7 @@ body {
   margin: 0 auto;
   background: url("../../img/backgrounds/3.jpg") no-repeat;
   background-position: left top;
-  background-size: 50% 933px;
+  background-size: 720px 933px;
 }
 
 .order_block {
@@ -348,6 +355,20 @@ body {
   margin: 70px auto 80px auto;
 }
 
+.portfolio {
+  margin: 240px auto;
+  padding: 80px;
+  max-width: 1440px;
+}
+
+.portfolio_header {
+  margin: 120px 0;
+}
+
+.portfolio_navbar-link {
+  margin: 0 50px 0 0;
+}
+
 .prices {
   max-width: 1440px;
   margin: 240px auto;
@@ -361,6 +382,7 @@ body {
 }
 
 .prices_wrapper {
+  margin: 120px 0 120px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
@@ -387,4 +409,82 @@ body {
 .prices_cart-text {
   margin: 0 0 30px 0;
   max-width: 260px;
+}
+
+.contacts {
+  margin: 0 auto;
+  max-width: 1440px;
+  border: 2px solid transparent;
+}
+
+.contacts_header {
+  margin: 120px 0 0 80px;
+}
+
+.contacts_wrapper {
+  margin: 40px 150px;
+  background: url("../../img/backgrounds/6.jpg") no-repeat;
+  background-size: 590px 890px;
+  background-position: top left;
+}
+
+.contacts_S_header-1 {
+  margin: 0 40px 30px 58%;
+}
+
+.contacts_S_header-2 {
+  margin: 30px 40px 0 58%;
+}
+
+.contacts_wrapper_form {
+  padding: 93px 0 93px 58%;
+  border: 1px solid #141414;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts_btn {
+  margin: 0 0 10px 0;
+}
+
+.contacts_input, .contacts_textarea {
+  width: 370px;
+  margin: 0 0 40px 0;
+}
+
+.contacts_conditions {
+  width: 370px;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.footer_header {
+  text-align: center;
+}
+
+.footer_wrapper {
+  padding: 50px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer_block {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+}
+
+.footer_block_social {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+.footer_social {
+  text-align: center;
+  margin: 0 25px 0 25px;
 }

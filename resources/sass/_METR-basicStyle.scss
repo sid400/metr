@@ -192,12 +192,20 @@
     @extend %Btn-a-fix;
     position: relative;
 
-    &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 50%;
-        height: 1px;
-    }
+}
+.M_btn-selectActive{
+&:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background-color: $C_black;
+}
+}
+//FORM
+.M_input{
+    padding: 10px;
+    border: 1px solid $C_black;
 }
