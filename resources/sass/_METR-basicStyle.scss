@@ -208,4 +208,12 @@
 .M_input{
     padding: 10px;
     border: 1px solid $C_black;
+    background-color: $C_gray-main;
+}
+.M_textarea{
+    padding: 10px;
+    border: 1px solid $C_black;
+    background-color: $C_gray-main;
+    resize: none;
+    overflow: auto;
 }

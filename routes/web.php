@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('METR');
-});
+//Route::get('/', function () {
+//    return view('metr');
+//});
+
+
+Auth::routes();
+
+Route::get('/', 'App\Http\Controllers\metrController@index')->name('metr');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
