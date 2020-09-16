@@ -150,16 +150,22 @@
 
 .M_btn-select {
   position: relative;
+  cursor: pointer;
 }
-
-.M_btn-selectActive:after {
+.M_btn-select:after {
   content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 50%;
+  width: 0%;
   height: 1px;
   background-color: #141414;
+  transition: all 0.5s ease-out;
+}
+
+.M_btn-selectActive:after {
+  width: 50%;
+  transition: all 0.5s ease-out;
 }
 
 .M_input {

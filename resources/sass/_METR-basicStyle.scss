@@ -191,17 +191,29 @@
     @extend .M_text-Btn;
     @extend %Btn-a-fix;
     position: relative;
+    cursor: pointer;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: $C_black;
+        transition: all 0.5s ease-out;
+    }
 
+    //&:hover{
+    //    &:after{
+    //        width: 50%;
+    //        transition: all 5s ease-out;
+    //    }
+    //}
 }
 .M_btn-selectActive{
 &:after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
     width: 50%;
-    height: 1px;
-    background-color: $C_black;
+    transition: all 0.5s ease-out;
 }
 }
 //FORM

@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="{{ asset('js/app.js') }}" defer></script>
+    {{--        <script src="{{ asset('js/app.js') }}" defer></script>--}}
     <script src="{{ asset('js/METR.js') }}" defer></script>
     {{--    <link rel="stylesheet" href="{{ asset('css/app.css') }}">--}}
     <link rel="stylesheet" href="{{ asset('css/METR-main.css') }}">
@@ -13,8 +13,6 @@
 </head>
 <body>
 <div id="metr">
-    @{{test}}
-    <input type="text" v-model="test">
     <div class="wrapper-gray">
         <section class="main">
             <div class="header">
@@ -85,13 +83,14 @@
     <section class="portfolio">
         <h1 class="M_H1 portfolio_header">Портфолио</h1>
         <div class="portfolio_navbar">
-            <a href="" class="portfolio_navbar-link M_btn-select M_btn-selectActive">Все проекты</a>
-            <a href="" class="portfolio_navbar-link M_btn-select">Спальня</a>
-            <a href="" class="portfolio_navbar-link M_btn-select">Кухня</a>
-            <a href="" class="portfolio_navbar-link M_btn-select">Гостиная</a>
-            <a href="" class="portfolio_navbar-link M_btn-select">Кабинет</a>
+            <a class="portfolio_navbar-link M_btn-select"
+               v-for="(group, index) in portfolio.groups" :key="group"
+               v-bind:class="[index * 1  === portfolio.selectedGroup ? 'M_btn-selectActive' : '']"
+               v-on:click="portfolio.selectedGroup  = index * 1 , filterProduct()">@{{group}}</a>
         </div>
-        <div class="portfolio_showcase"></div>
+        <div class="portfolio_showcase">
+            <div></div>
+        </div>
 
     </section>
     <div class="wrapper-gray">
